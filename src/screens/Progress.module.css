@@ -1,0 +1,94 @@
+.screen {
+  width: 100%; height: 100%;
+  background: linear-gradient(160deg, #0A0A0F, #0A0F1A);
+  overflow-y: auto; scrollbar-width: none; color: #F0F0FF;
+}
+.screen::-webkit-scrollbar { display: none; }
+
+.header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 52px 24px 16px;
+}
+.title { font-size: 26px; font-weight: 900; letter-spacing: -0.8px; }
+.xpChip {
+  font-size: 14px; font-weight: 900; color: #FFD700;
+  background: rgba(255,215,0,0.1); border: 1px solid rgba(255,215,0,0.25);
+  border-radius: 20px; padding: 8px 14px;
+}
+
+.statsRow { display: flex; padding: 0 20px; gap: 10px; margin-bottom: 14px; }
+.statCard {
+  flex: 1; background: #1C1C26; border: 1px solid #2A2A3A; border-radius: 18px;
+  padding: 14px; display: flex; flex-direction: column; align-items: center; gap: 4px;
+}
+.statVal { font-size: 22px; font-weight: 900; }
+.statLbl { font-size: 10px; color: #555570; font-weight: 600; text-align: center; }
+
+.weeklyCard {
+  margin: 0 20px 16px;
+  background: #1C1C26; border: 1px solid #2A2A3A; border-radius: 20px;
+  padding: 18px; display: flex; flex-direction: column; gap: 10px;
+}
+.weeklyTop { display: flex; justify-content: space-between; align-items: center; }
+.weeklyLabel { font-size: 15px; font-weight: 800; }
+.weeklyFrac { font-size: 16px; color: #9090B0; }
+.weeklyPips { display: flex; gap: 5px; }
+.pip { flex: 1; height: 8px; border-radius: 4px; }
+.weeklyNote { font-size: 12px; color: #555570; }
+
+.section { padding: 0 24px; margin-bottom: 14px; display: flex; flex-direction: column; gap: 12px; }
+.sectionTitle { font-size: 18px; font-weight: 800; }
+
+.subjectTabs { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.subjectTabs::-webkit-scrollbar { display: none; }
+.subTab {
+  display: flex; align-items: center; gap: 7px;
+  padding: 8px 16px; border-radius: 20px; white-space: nowrap;
+  background: #1C1C26; border: 1.5px solid #2A2A3A;
+  font-size: 13px; font-weight: 800; color: #555570; cursor: pointer;
+  transition: all 0.15s;
+}
+.subTabDot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.subTabActive {}
+
+.syllabusCard {
+  margin: 0 20px;
+  background: #13131A; border: 1px solid #2A2A3A; border-radius: 22px;
+  overflow: hidden;
+}
+.syllabusTop { display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+.syllabusCode { font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 4px; }
+.syllabusName { font-size: 18px; font-weight: 800; max-width: 200px; line-height: 1.2; }
+
+.ring {
+  width: 76px; height: 76px; border-radius: 50%; border: 9px solid;
+  display: flex; align-items: center; justify-content: center; position: relative;
+}
+.ringInner {
+  position: absolute; inset: -5px; border-radius: 50%;
+  border: 7px solid; opacity: 0.3;
+}
+.ringPct { font-size: 18px; font-weight: 900; }
+
+.progBg { height: 5px; background: #2A2A3A; margin: 0 20px; border-radius: 3px; overflow: hidden; }
+.progFill { height: 100%; border-radius: 3px; }
+.progNote { font-size: 12px; color: #555570; margin: 8px 20px 16px; }
+
+.nodes { padding: 0 20px 20px; display: flex; flex-direction: column; }
+
+.nodeRow { display: flex; gap: 12px; }
+.nodeTrack { width: 22px; display: flex; flex-direction: column; align-items: center; }
+.nodeCircle {
+  width: 22px; height: 22px; border-radius: 50%; border: 2px solid;
+  background: #0A0A0F;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; z-index: 1;
+}
+.nodeDot { width: 8px; height: 8px; border-radius: 50%; }
+.nodeLine { width: 2px; flex: 1; min-height: 14px; border-radius: 1px; margin: 2px 0; }
+
+.nodeContent { flex: 1; padding: 7px 10px; display: flex; flex-direction: column; gap: 2px; margin-bottom: 2px; }
+.nodeTopRow { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.nodeTopic { font-size: 14px; flex: 1; line-height: 1.4; }
+.nextBadge { font-size: 9px; font-weight: 900; letter-spacing: 0.8px; padding: 2px 7px; border-radius: 6px; white-space: nowrap; }
+.nodeWeek { font-size: 11px; color: #555570; }
