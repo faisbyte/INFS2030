@@ -9,28 +9,23 @@ export default function SubjectConfirm({ nav }) {
 
   return (
     <div className={s.screen}>
-      <div className={s.bg} style={{ background: 'linear-gradient(160deg, #0A1A2A 0%, #0A0A0F 100%)' }} />
       <div className={s.content}>
         <button className={s.back} onClick={() => nav('lms')}>←</button>
-
-        <div className="step-dots" style={{marginBottom:24}}>
-          {[0,1,2].map(i => <div key={i} className={`step-dot${i<=1?' active':''}`} />)}
+        <div className={s.stepRow}>
+          {[0,1,2].map(i => <div key={i} className={`${s.stepDot}${i<=1?' '+s.stepDotActive:''}`} />)}
         </div>
-
         <div className={s.titleRow}>
           <div>
-            <h1 className={s.title}>Your subjects</h1>
-            <p className={s.subtitle} style={{marginBottom:0}}>Imported from Canvas LMS</p>
+            <h1 className={s.title} style={{marginBottom:4}}>Your subjects</h1>
+            <p style={{fontSize:14,color:'#A8988E'}}>Imported from Canvas LMS</p>
           </div>
-          <div className={s.syncedBadge}>
-            <span className={s.syncedDot} />Synced
-          </div>
+          <div className={s.syncedBadge}><span className={s.syncedDot}/>Synced</div>
         </div>
 
-        <div className={s.list} style={{marginTop:20}}>
+        <div className={s.list}>
           {subjects.map(sub => (
             <button key={sub.id} className={s.subjectCard} onClick={() => toggle(sub.id)}
-              style={{ borderColor: sub.on ? sub.color + '40' : 'var(--border)', background: sub.on ? sub.color + '0C' : 'var(--surface2)' }}>
+              style={{ borderColor: sub.on ? sub.color+'50' : '#E4D9CE', background: sub.on ? sub.color+'0A' : '#fff' }}>
               <div className={s.subjectBar} style={{ background: sub.color }} />
               <div className={s.subjectBody}>
                 <div className={s.subjectTop}>
@@ -48,8 +43,8 @@ export default function SubjectConfirm({ nav }) {
           ))}
         </div>
 
-        <button className={s.continueBtn} disabled={count === 0} onClick={() => nav('interests')}>
-          Continue with {count} subject{count !== 1 ? 's' : ''} →
+        <button className={s.continueBtn} disabled={count===0} onClick={() => nav('interests')}>
+          Continue with {count} subject{count!==1?'s':''} →
         </button>
       </div>
     </div>

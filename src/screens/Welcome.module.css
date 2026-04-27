@@ -1,86 +1,67 @@
 .screen {
   width: 100%; height: 100%;
-  background: linear-gradient(160deg, #130D2E 0%, #0A0A0F 50%, #0D1B3E 100%);
-  overflow-y: auto; overflow-x: hidden;
-  scrollbar-width: none;
+  background: linear-gradient(160deg, #FFF5EE 0%, #F7F0E8 60%, #EDE4D8 100%);
+  overflow-y: auto; scrollbar-width: none;
 }
 .screen::-webkit-scrollbar { display: none; }
 
-.bg {
-  position: absolute; inset: 0; pointer-events: none;
-  background:
-    radial-gradient(ellipse 300px 300px at -10% 10%, rgba(124,77,255,0.25) 0%, transparent 70%),
-    radial-gradient(ellipse 200px 200px at 110% 40%, rgba(0,229,255,0.12) 0%, transparent 70%),
-    radial-gradient(ellipse 150px 150px at 10% 80%, rgba(255,107,53,0.1) 0%, transparent 70%);
-}
-
 .content {
-  position: relative; z-index: 1;
-  padding: 56px 28px 40px;
+  padding: 60px 28px 44px;
   min-height: 100%;
-  display: flex; flex-direction: column; justify-content: space-between; gap: 32px;
+  display: flex; flex-direction: column; justify-content: space-between; gap: 36px;
 }
 
-.logo { display: flex; align-items: center; gap: 14px; }
+.logo { display: flex; align-items: center; gap: 12px; }
 .logoIcon {
-  width: 52px; height: 52px; border-radius: 16px; font-size: 26px;
-  background: linear-gradient(135deg, #7C4DFF, #00E5FF);
+  width: 48px; height: 48px; border-radius: 14px; font-size: 22px;
+  background: #C85C38;
   display: flex; align-items: center; justify-content: center;
 }
-.logoName { font-size: 21px; font-weight: 800; color: #F0F0FF; }
-.logoTag { font-size: 12px; color: #9090B0; margin-top: 1px; }
+.logoName { font-size: 20px; font-weight: 800; color: #1A1514; }
+.logoTag  { font-size: 12px; color: #A8988E; margin-top: 1px; }
 
 .hero { display: flex; flex-direction: column; gap: 16px; }
 
 .badge {
   display: inline-flex; align-items: center; gap: 8px;
-  background: rgba(124,77,255,0.12); border: 1px solid rgba(124,77,255,0.3);
+  background: #fff; border: 1px solid #E4D9CE;
   border-radius: 20px; padding: 7px 14px;
-  font-size: 12px; color: #B388FF; font-weight: 600;
-  align-self: flex-start;
+  font-size: 12px; color: #6B605A; font-weight: 600; align-self: flex-start;
 }
-.badgeDot {
-  width: 6px; height: 6px; border-radius: 50%;
-  background: #00E676; flex-shrink: 0;
-}
+.badgeDot { width: 6px; height: 6px; border-radius: 50%; background: #2D7A4F; flex-shrink: 0; }
 
 .headline {
-  font-size: 50px; font-weight: 900; color: #F0F0FF;
-  line-height: 1.08; letter-spacing: -2px;
+  font-size: 48px; font-weight: 900; color: #1A1514;
+  line-height: 1.05; letter-spacing: -2px;
 }
-
-.sub { font-size: 15px; color: #9090B0; line-height: 1.6; }
+.sub { font-size: 15px; color: #6B605A; line-height: 1.65; }
+.accent { color: #C85C38; font-weight: 700; }
 
 .stats {
-  display: flex;
-  background: #1C1C26; border-radius: 20px; border: 1px solid #2A2A3A;
-  overflow: hidden;
+  display: flex; background: #fff;
+  border-radius: 20px; border: 1px solid #E4D9CE; overflow: hidden;
 }
 .stat {
   flex: 1; display: flex; flex-direction: column; align-items: center;
-  padding: 18px 8px; border-right: 1px solid #2A2A3A;
-  gap: 3px;
+  padding: 18px 8px; border-right: 1px solid #E4D9CE; gap: 3px;
 }
 .stat:last-child { border-right: none; }
-.statVal { font-size: 22px; font-weight: 800; color: #F0F0FF; }
-.statLbl { font-size: 11px; color: #9090B0; }
+.statVal { font-size: 22px; font-weight: 800; color: #1A1514; }
+.statLbl { font-size: 11px; color: #A8988E; }
 
 .actions { display: flex; flex-direction: column; gap: 12px; }
 
 .primaryBtn {
-  width: 100%; padding: 18px;
-  background: linear-gradient(90deg, #7C4DFF, #5E35B1);
-  border: none; border-radius: 16px;
-  color: #fff; font-size: 17px; font-weight: 800;
-  cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; padding: 18px; background: #C85C38;
+  border: none; border-radius: 16px; color: #fff;
+  font-size: 17px; font-weight: 800; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
   transition: opacity 0.15s;
 }
-.primaryBtn:hover { opacity: 0.9; }
+.primaryBtn:hover { opacity: 0.88; }
 
 .skipBtn {
-  background: none; border: none;
-  color: #555570; font-size: 14px; font-weight: 600;
-  cursor: pointer; padding: 10px;
-  text-align: center;
+  background: none; border: none; color: #A8988E;
+  font-size: 14px; font-weight: 600; cursor: pointer; padding: 10px; text-align: center;
 }
-.skipBtn:hover { color: #9090B0; }
+.skipBtn:hover { color: #6B605A; }

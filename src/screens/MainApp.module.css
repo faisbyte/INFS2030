@@ -1,10 +1,10 @@
-.wrap { width: 100%; height: 100%; display: flex; flex-direction: column; background: #0A0A0F; }
+.wrap { width: 100%; height: 100%; display: flex; flex-direction: column; background: #F7F0E8; }
 .content { flex: 1; overflow: hidden; position: relative; }
 
 .tabBar {
   display: flex;
-  background: #111118;
-  border-top: 1px solid #2A2A3A;
+  background: #fff;
+  border-top: 1px solid #E4D9CE;
   padding: 10px 8px 28px;
   flex-shrink: 0;
 }
@@ -12,15 +12,13 @@
 .tab {
   flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;
   background: none; border: none; cursor: pointer; padding: 4px 0;
-  transition: opacity 0.15s;
 }
-.tab:hover { opacity: 0.8; }
 
 .tabIcon {
   width: 38px; height: 30px; display: flex; align-items: center; justify-content: center;
-  border-radius: 14px; font-size: 16px; transition: background 0.15s;
+  border-radius: 10px; font-size: 17px; transition: background 0.15s;
 }
-.tabActive .tabIcon { background: rgba(124,77,255,0.18); }
+.tabActive .tabIcon { background: #FFF0EA; }
 
-.tabLabel { font-size: 10px; color: #555570; font-weight: 500; }
-.tabActive .tabLabel { color: #7C4DFF; font-weight: 700; }
+.tabLabel { font-size: 10px; color: #A8988E; font-weight: 500; }
+.tabActive .tabLabel { color: #C85C38; font-weight: 700; }
