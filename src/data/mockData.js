@@ -37,6 +37,7 @@ export const mockInterests = [
 export const mockFeed = [
   {
     id: '1',
+    video: '/videos/yochi.mp4',
     visual: 'five-forces',
     subject: 'BUSS1000', subjectColor: '#5B4FCF',
     week: 4,
@@ -62,6 +63,7 @@ export const mockFeed = [
   },
   {
     id: '2',
+    video: '/videos/f1.mp4',
     visual: 'supply-chain',
     subject: 'BUSS1000', subjectColor: '#5B4FCF',
     week: 3,
@@ -81,6 +83,7 @@ export const mockFeed = [
   },
   {
     id: '3',
+    video: '/videos/coffee.mp4',
     visual: 'segmentation',
     subject: 'MKTG2001', subjectColor: '#C85C38',
     week: 5,
@@ -103,6 +106,7 @@ export const mockFeed = [
   },
   {
     id: '4',
+    video: '/videos/nike.mp4',
     visual: 'capital',
     subject: 'FINC2011', subjectColor: '#2D7A4F',
     week: 11,
@@ -121,6 +125,7 @@ export const mockFeed = [
   },
   {
     id: '5',
+    video: '/videos/afl.mp4',
     visual: 'npv',
     subject: 'FINC2011', subjectColor: '#2D7A4F',
     week: 2,
@@ -140,6 +145,7 @@ export const mockFeed = [
   },
   {
     id: '6',
+    video: '/videos/ferrari.mp4',
     visual: 'brand',
     subject: 'MKTG2001', subjectColor: '#C85C38',
     week: 6,
