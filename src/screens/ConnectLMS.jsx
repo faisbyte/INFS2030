@@ -56,6 +56,9 @@ export default function ConnectLMS({ nav }) {
               </button>
             ))}
             <div className={s.secNote}>🔒 256-bit encrypted. Read-only. We never store your password.</div>
+            <div className={s.paidNote}>
+              🎓 <strong>Free for university students.</strong> Your institution covers the cost of CampusScroll — no credit card needed.
+            </div>
           </div>
         )}
       </div>
