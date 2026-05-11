@@ -33,7 +33,7 @@ export default function Welcome({ nav }) {
         </div>
 
         <div className={s.actions}>
-          <button className={s.primaryBtn} onClick={() => nav('lms')}>Get Started →</button>
+          <button className={s.primaryBtn} onClick={() => nav('terms')}>Get Started →</button>
           <button className={s.skipBtn} onClick={() => nav('app')}>Skip to Demo →</button>
         </div>
       </div>

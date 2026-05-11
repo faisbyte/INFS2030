@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Welcome from './screens/Welcome.jsx'
+import Terms from './screens/Terms.jsx'
 import ConnectLMS from './screens/ConnectLMS.jsx'
 import SubjectConfirm from './screens/SubjectConfirm.jsx'
 import InterestBuilder from './screens/InterestBuilder.jsx'
@@ -15,6 +16,7 @@ export default function App() {
     <div className="shell">
       <div className="phone">
         {screen === 'welcome'   && <Welcome nav={nav} />}
+        {screen === 'terms'     && <Terms nav={nav} />}
         {screen === 'lms'       && <ConnectLMS nav={nav} />}
         {screen === 'subjects'  && <SubjectConfirm nav={nav} />}
         {screen === 'interests' && <InterestBuilder nav={nav} />}
